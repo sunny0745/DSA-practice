@@ -1,0 +1,1 @@
+{"name":"Local: temp","url":"c:\\Users\\amark\\OneDrive\\Desktop\\sunny cpp\\temp.cpp","tests":[{"id":1665519536593,"input":"4\n10 100 200\n3 10 100\n1000 1000 2200\n100 100 100","output":"20000\n300\n2040000\n10000"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\amark\\OneDrive\\Desktop\\sunny cpp\\temp.cpp","group":"local","local":true}

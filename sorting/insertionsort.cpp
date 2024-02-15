@@ -1,3 +1,9 @@
+/* WHY INSERTION SORT ?
+
+ANSWER ==>> BECAUSE IT IS ADAPTABLE
+                    IT IS STABLE ALGORITHIM
+
+*/
 #include<iostream>
 using namespace std;
 
@@ -37,9 +43,3 @@ int main(){
     return 0;
 }
 
-/* WHY INSERTION SORT ?
-
-ANSWER ==>> BECAUSE IT IS ADAPTABLE
-                    IT IS STABLE ALGORITHIM
-
-*/

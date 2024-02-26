@@ -10,7 +10,7 @@ int main (){
     }
 
     // pre compute 
-    map<int , int > mpp ;  // here we can use unordered map also the output will same 
+    unordered_map<int , int > mpp ;  // here we can use map also the output will same 
     for(int i = 0 ; i<n ; i++){
         mpp[arr[i]]++ ;
     }
@@ -22,7 +22,7 @@ int main (){
         int number ; 
         cin>>number; 
         // fetch 
-        cout<< mpp[number]<< endl ;
+        cout<<"freq ="<< mpp[number]<< endl ;
     }
 
     return 0 ;

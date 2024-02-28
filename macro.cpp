@@ -1,7 +1,7 @@
 /*
 MACRO   --->>>> It is a piece of code in a program that is 
-            repalced by value of macro .
-  */ 
+                repalced by value of macro .
+*/ 
 
 #include<iostream>
 using namespace std ;

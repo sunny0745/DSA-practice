@@ -62,6 +62,53 @@ node* deletetail(node* head){
     return head ;
 }
 
+node* insertbeforehead(node* head , int val ){
+    node* newhead = new node(val , head , nullptr ) ; 
+    head->back = newhead ; 
+    
+    return newhead ; 
+}
+
+
+node* insertbeforetail(node* head  , int val ){
+   
+   if(head->next == NULL) return insertbeforehead(head , val ) ; 
+    node* tail = head ; 
+    while(tail->next != NULL){
+        tail = tail->next;
+    }
+
+    node* prev = tail->back ; 
+    node* newnode = new node(10 , tail , prev) ; 
+    prev->next = newnode ;
+    tail->back = newnode ; 
+}
+
+node* insertbeforekthelement(node* head ,int k , int val){
+    if(k==1) return insertbeforehead(head , val ) ; 
+
+node* temp = head ; 
+int cnt = 0 ; 
+while(temp!= NULL){
+    cnt++ ; 
+    if(cnt==k)  break;
+    temp = temp->next ; 
+}
+
+node* prev = temp->back ; 
+node* newnode = new node(val , temp , prev) ; 
+temp->back = newnode;
+prev->next = newnode ; 
+
+return head ; 
+}
+
+node* insertbeforenode(node* node , int val ){
+    node* prev = node->back ; 
+    node* newnode = new node(val , node , prev ) ;
+    prev->next = newnode ; 
+    node->back = newnode ;
+}
 void print(node* head){
     while(head!=NULL){
         cout<<head->data<<" ";
@@ -72,7 +119,7 @@ int main(){
     vector<int> arr = {12 , 5 , 8 , 7} ; 
     node* head = convertarr2dll(arr) ;
     
-    head = deletetail(head) ; 
+    insertbeforenode(head->next , 100) ; 
     print(head) ;
     return 0 ; 
 }

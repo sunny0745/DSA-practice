@@ -57,7 +57,6 @@ int main(){
 
    int tempsol= sqrtinteger(n);
    cout<<"answer is "<< moreprecision( n , 3 , tempsol);
-
     return 0;
 }
 
